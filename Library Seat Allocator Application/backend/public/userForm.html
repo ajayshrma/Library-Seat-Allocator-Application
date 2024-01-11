@@ -1,0 +1,84 @@
+<!-- userform.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Allocation Form</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h2 {
+        margin-bottom: 20px;
+      }
+
+      .form-container form {
+        text-align: center;
+      }
+
+      .form-container label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .form-container input {
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .form-container button {
+        background-color: rgb(37, 216, 20);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>User Global Form</h2>
+      <form id="userForm">
+        <label for="userName">User Name:</label>
+        <br />
+        <input type="text" id="userName" name="userName" required />
+        <br />
+        <label for="userNumber">User Number:</label>
+        <br />
+        <input type="text" id="userNumber" name="userNumber" required />
+        <br />
+        <label for="startDate">Subscription Start Date:</label>
+        <br />
+        <input type="date" id="startDate" name="startDate" required />
+        <br />
+        <label for="endDate">Subscription End Date:</label>
+        <br />
+        <input type="date" id="endDate" name="endDate" required />
+
+        <button type="button" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="submitform.js"></script>
+  </body>
+</html>

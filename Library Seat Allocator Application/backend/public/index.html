@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Global Form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+
+      #createSeatsForm {
+        text-align: center;
+      }
+
+      #totalSeats {
+            padding: 5px; /* Adjusted padding */
+            margin-right: 10px;
+            width: 50px; /* Adjusted width */
+        }
+
+      #createButton {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .login-container {
+        max-width: 300px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Login Form -->
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="/your-login-endpoint" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" style="background-color:rgb(12, 70, 228);">Login</button>
+      </form>
+    </div>
+    <!-- Existing dashboard content goes here -->
+
+    <div id="createSeatsForm">
+      <h2>Create Library Seats</h2>
+      <label for="totalSeats">Enter the number of seats:</label>
+      <input type="number" id="totalSeats" name="totalSeats" required />
+      <br>
+      <button id="createButton"  style="background-color: rgb(226, 42, 17)">
+        Create Seats
+      </button>
+
+      <!-- New button for redirecting to seats.html -->
+      <button id="seatsButton"  style="background-color: green">View Seats</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

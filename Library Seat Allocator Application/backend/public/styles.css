@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .seats-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .seats-table th, .seats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .seats-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .edit-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
